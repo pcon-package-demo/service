@@ -12,7 +12,8 @@ public with sharing class CasesSelector extends ApplicationSObjectSelector imple
       Case.Id,
       Case.Description,
       Case.Subject,
-      Case.CaseNumber
+      Case.CaseNumber,
+      Case.InternalStatus__c
     };
   }
 
@@ -26,7 +27,7 @@ public with sharing class CasesSelector extends ApplicationSObjectSelector imple
     );
   }
 
-  public List<Case> selectByNumber(String caseNumber) {
+  public Case selectByNumber(String caseNumber) {
     fflib_QueryFactory qf = newQueryFactory();
 
     for (FieldSet fs : sObjectFieldSetList) {

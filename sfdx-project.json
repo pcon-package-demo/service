@@ -1,8 +1,8 @@
 {
   "packageDirectories": [
     {
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
+      "versionName": "2024-08-08",
+      "versionNumber": "1.0.0.NEXT",
       "path": "force-app",
       "default": true,
       "package": "service",
@@ -32,6 +32,7 @@
   "sourceApiVersion": "61.0",
   "packageAliases": {
     "service": "0Hoak0000000D25CAE",
+    "service@1.0.0-1": "04tak0000002moXAAQ",
     "core": "0Hoak0000000CyrCAE",
     "core@1.0.0-1": "04tak0000002euDAAQ",
     "at4dx": "0Hoak0000000CsPCAU",

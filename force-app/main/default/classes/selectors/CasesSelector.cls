@@ -27,6 +27,11 @@ public with sharing class CasesSelector extends ApplicationSObjectSelector imple
     );
   }
 
+  public Case selectById(Id recordId) {
+    List<Case> records = selectById(new Set<Id>{ recordId });
+    return records.isEmpty() ? null : records.get(0);
+  }
+
   public Case selectByNumber(String caseNumber) {
     fflib_QueryFactory qf = newQueryFactory();
 
